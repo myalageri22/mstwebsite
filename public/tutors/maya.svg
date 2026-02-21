@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-label="Tutor Maya placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c325b" />
+      <stop offset="100%" stop-color="#0b1120" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="420" fill="url(#bg)" />
+  <rect x="205" y="82" width="190" height="190" rx="24" fill="#8bd449" opacity="0.82" />
+  <rect x="165" y="235" width="270" height="140" rx="70" fill="#2f80d8" opacity="0.84" />
+  <text x="300" y="196" text-anchor="middle" font-size="54" fill="#0b1120" font-family="Georgia, serif">BIO</text>
+</svg>
