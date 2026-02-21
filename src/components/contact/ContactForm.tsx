@@ -103,7 +103,7 @@ export function ContactForm() {
             id="phone"
             name="phone"
             onChange={(event) => setForm((prev) => ({ ...prev, phone: event.target.value }))}
-            placeholder="(555) 123-4567"
+            placeholder="Optional"
             type="tel"
             value={form.phone}
           />

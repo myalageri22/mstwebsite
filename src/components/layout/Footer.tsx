@@ -34,9 +34,7 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-brand-lime">Contact</h3>
             <ul className="mt-4 space-y-2 text-sm text-brand-muted">
-              <li>Email: hello@tmsatutoring.com</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Location: Austin, TX (Online + In-Person)</li>
+              <li>Email: msttutorsofficial@gmail.com</li>
             </ul>
           </div>
         </div>
