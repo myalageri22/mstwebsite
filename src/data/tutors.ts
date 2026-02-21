@@ -37,7 +37,7 @@ export const tutors: Tutor[] = [
     fullBio:
       "Jack is a current 10th grader at Tompkins High School and has a strong background in academic competitions, with mutiple awards at various levels. On the side he is also a professional table tennis player.",
     image: "/tutors/maya.svg",
-    badges: ["3x Science Olympiad Invitational Medals", "Tompkins HS Class of 2027-2028 Rank 2", "2021 AMC8 Achievement & Honor Roll", "3x TMSCA State Medals", "4th Place Team at State (2024)"]
+    badges: ["3x Science Olympiad Invitational Medals", "Tompkins HS Class of 2027-2028 Current Salutatorian", "2021 AMC8 Achievement & Honor Roll", "3x TMSCA State Medals", "4th Place Team at State (2024)"]
   },
   {
     id: "eric-lin",
