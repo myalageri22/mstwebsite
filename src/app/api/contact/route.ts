@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 type ContactPayload = {
   name?: string;
@@ -10,6 +11,28 @@ type ContactPayload = {
 };
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function getTransporter() {
+  const host = process.env.SMTP_HOST;
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  const port = Number(process.env.SMTP_PORT ?? "465");
+  const secure = process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : port === 465;
+
+  if (!host || !user || !pass) {
+    return null;
+  }
+
+  return nodemailer.createTransport({
+    host,
+    port,
+    secure,
+    auth: {
+      user,
+      pass
+    }
+  });
+}
 
 export async function POST(request: Request) {
   let body: ContactPayload;
@@ -50,14 +73,54 @@ export async function POST(request: Request) {
     );
   }
 
-  console.log("[Contact] New tutoring inquiry", {
-    name,
-    email,
-    phone,
-    grade,
-    message,
-    submittedAt: new Date().toISOString()
-  });
+  const transporter = getTransporter();
+  const toEmail = process.env.CONTACT_TO ?? "msttutorsofficial@gmail.com";
+  const fromEmail = process.env.CONTACT_FROM ?? process.env.SMTP_USER;
+
+  if (!transporter || !fromEmail) {
+    return NextResponse.json(
+      { success: false, error: "Email service is not configured yet. Please try again later." },
+      { status: 500 }
+    );
+  }
+
+  const submittedAt = new Date().toISOString();
+
+  try {
+    await transporter.sendMail({
+      from: fromEmail,
+      to: toEmail,
+      replyTo: email,
+      subject: `New tutoring inquiry from ${name}`,
+      text: [
+        "New tutoring inquiry",
+        `Submitted At: ${submittedAt}`,
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Phone: ${phone || "Not provided"}`,
+        `Student Grade: ${grade || "Not provided"}`,
+        "",
+        "Message:",
+        message
+      ].join("\n"),
+      html: `
+        <h2>New tutoring inquiry</h2>
+        <p><strong>Submitted At:</strong> ${submittedAt}</p>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        <p><strong>Student Grade:</strong> ${grade || "Not provided"}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, "<br/>")}</p>
+      `
+    });
+  } catch (error) {
+    console.error("[Contact] Failed to send inquiry email", error);
+    return NextResponse.json(
+      { success: false, error: "Unable to send message right now. Please try again." },
+      { status: 500 }
+    );
+  }
 
   return NextResponse.json({ success: true, message: "Thanks! We will reach out shortly." });
 }
