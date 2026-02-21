@@ -16,7 +16,7 @@ export const tutors: Tutor[] = [
     shortBio: "Biology student with a strong science competition background",
     fullBio:
       "Mrinal is a current 10th grader at Tompkins High School and has a strong background in math and science competitions, with multiple awards at the regional and state level. He is passionate about biology and hopes to pursue a career in biomedical engineering.",
-    image: "/tutors/ava.svg",
+    image: "/tutors/mrinal.png",
     badges: ["2nd Place Science at State (2024)", "Multiple Regional Level Awards in Science", "1st Place Team at State (2024)"] 
   },
   {
