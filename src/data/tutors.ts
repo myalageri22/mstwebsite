@@ -26,7 +26,7 @@ export const tutors: Tutor[] = [
     shortBio: "Biology student with a strong science competition background",
     fullBio:
       "Mrinal is a current 10th grader at Tompkins High School and has a strong background in math and science competitions, with multiple awards at the regional and state level. He is passionate about biology and hopes to pursue a career in biomedical engineering.",
-    image: "/tutors/ava.svg",
+    image: "/tutors/mrinal.png",
     badges: ["2nd Place Science at State (2024)", "Multiple Regional Level Awards in Science", "1st Place Team at State (2024)"] 
   },
   {
@@ -36,7 +36,7 @@ export const tutors: Tutor[] = [
     shortBio: "General tutor focused on helping students master dense content quickly.",
     fullBio:
       "Jack is a current 10th grader at Tompkins High School and has a strong background in academic competitions, with mutiple awards at various levels. On the side he is also a professional table tennis player.",
-    image: "/tutors/maya.svg",
+    image: "/tutors/Jack.jpeg",
     badges: ["3x Science Olympiad Invitational Medals", "Tompkins HS Class of 2027-2028 Current Salutatorian", "2021 AMC8 Achievement & Honor Roll", "3x TMSCA State Medals", "4th Place Team at State (2024)"]
   },
   {
