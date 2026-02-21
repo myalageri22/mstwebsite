@@ -34,16 +34,7 @@ export default function ContactPage() {
               <h2 className="text-xl font-semibold">Business Contact Info</h2>
               <ul className="mt-4 space-y-3 text-sm text-brand-muted">
                 <li>
-                  <span className="font-medium text-brand-text">Email:</span> hello@tmsatutoring.com
-                </li>
-                <li>
-                  <span className="font-medium text-brand-text">Phone:</span> (555) 123-4567
-                </li>
-                <li>
-                  <span className="font-medium text-brand-text">Location:</span> Austin, TX (Online + In-Person)
-                </li>
-                <li>
-                  <span className="font-medium text-brand-text">Hours:</span> Mon-Fri, 4:00 PM - 8:00 PM
+                  <span className="font-medium text-brand-text">Email:</span> msttutorsofficial@gmail.com
                 </li>
               </ul>
             </Card>
