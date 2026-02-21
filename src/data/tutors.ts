@@ -17,7 +17,7 @@ export const tutors: Tutor[] = [
     fullBio:
       "Aarav is a sophomore at Tompkins High School who one day aspires to be a computational neuroscientist doing groundbreaking research in academia. He has a strong background in science competitions from TMSCA Science in middle school, where he's won over 50 medals in 3 year, all the way through Science Olympiad in high school, where he's competed as part of the Tompkins SciOly A Team and placed top 10 at MIT, top 5 at state, and won regional competitions. Outside of science competitions, Aarav conducts computational neuoscience research and has published papers in the field.",
     image: "/tutors/ethan.svg",
-    badges: ["1st Place TMSCA Science at State", "Top 3 in 2 events at Texas State Science Olympiad", "Over 15 lifetime science olympiad medals (including over $500 in prize money and 9th at MIT)", "Never placed less than top 5 in Science at any TMSCA Comp", "1st Place Team at State (2024)", "Tompkins HS Class of 2027-2028 Rank 5"]
+    badges: ["1st Place TMSCA Science at State", "Top 3 in 2 events at Texas State Science Olympiad", "Over 15 lifetime scioly medals, $500 prize money won)", "Placed Top 5 in Science in every TMSCA comp attended", "1st Place Team at State (2024)", "Tompkins HS Class of 2027-2028 Rank 5"]
   },
   {
     id: "mrinal-yalageri",
