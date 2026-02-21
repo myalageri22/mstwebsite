@@ -26,17 +26,17 @@ const whyChooseUs = [
   {
     title: "Small Group Attention",
     description:
-      "Students get direct feedback, targeted correction, and room to ask specific questions each session."
+      "Students get direct feedback and lots of time to ask specific questions each session."
   },
   {
-    title: "Proven Test Strategies",
+    title: "Learn from the Best",
     description:
-      "We teach repeatable frameworks and shortcuts that improve speed, accuracy, and confidence under pressure."
+      "Learn from high schoolers who have been through the process and know how to actually win these type of competitions."
   },
   {
-    title: "Clear, Structured Progress",
+    title: "Competitive Pricing",
     description:
-      "Every week has a clear objective so students can track improvement and stay accountable."
+      "Our prices are significantly cheaper than other programs by over 50%!"
   }
 ];
 
