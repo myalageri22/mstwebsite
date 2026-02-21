@@ -40,6 +40,19 @@ const whyChooseUs = [
   }
 ];
 
+const offeredPrograms = [
+  {
+    title: "General Science",
+    description:
+      "Focused support in core science concepts, competition-style questions, and test-taking strategy."
+  },
+  {
+    title: "General Math",
+    description:
+      "Targeted coaching in foundational and advanced math topics with speed and accuracy practice."
+  }
+];
+
 export default function ProgramPage() {
   return (
     <SiteLayout>
@@ -97,6 +110,24 @@ export default function ProgramPage() {
               </li>
             ))}
           </ul>
+        </Container>
+      </section>
+
+      <section className="py-20">
+        <Container>
+          <SectionHeading
+            description="We currently offer two focused tracks so students can choose the best fit."
+            eyebrow="Programs Offered"
+            title="Two programs we offer"
+          />
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {offeredPrograms.map((program) => (
+              <Card key={program.title}>
+                <h3 className="text-xl font-semibold text-brand-text">{program.title}</h3>
+                <p className="mt-2 text-sm text-brand-muted">{program.description}</p>
+              </Card>
+            ))}
+          </div>
         </Container>
       </section>
 
