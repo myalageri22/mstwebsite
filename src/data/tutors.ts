@@ -10,6 +10,16 @@ export type Tutor = {
 
 export const tutors: Tutor[] = [
   {
+    id: "aarav-sinha",
+    name: "Aarav Sinha",
+    subjects: "Lead General Science Tutor",
+    shortBio: "Hands-on STEM tutor focused on concept clarity and exam performance.",
+    fullBio:
+      "Aarav is a sophomore at Tompkins High School who one day aspires to be a computational neuroscientist doing groundbreaking research in academia. He has a strong background in science competitions from TMSCA Science in middle school, where he's won over 50 medals in 3 year, all the way through Science Olympiad in high school, where he's competed as part of the Tompkins SciOly A Team and placed top 10 at MIT, top 5 at state, and won regional competitions. Outside of science competitions, Aarav conducts computational neuoscience research and has published papers in the field.",
+    image: "/tutors/ethan.svg",
+    badges: ["1st Place TMSCA Science at State", "Top 3 in 2 events at Texas State Science Olympiad", "Over 15 lifetime science olympiad medals (including over $500 in prize money and 9th at MIT)", "Never placed less than top 5 in Science at any TMSCA Comp", "1st Place Team at State (2024)", "Tompkins HS Class of 2027-2028 Rank 5"]
+  },
+  {
     id: "mrinal-yalageri",
     name: "Mrinal Yalageri",
     subjects: "Lead General Science Tutor",
@@ -18,16 +28,6 @@ export const tutors: Tutor[] = [
       "Mrinal is a current 10th grader at Tompkins High School and has a strong background in math and science competitions, with multiple awards at the regional and state level. He is passionate about biology and hopes to pursue a career in biomedical engineering.",
     image: "/tutors/ava.svg",
     badges: ["2nd Place Science at State (2024)", "Multiple Regional Level Awards in Science", "1st Place Team at State (2024)"] 
-  },
-  {
-    id: "aarav-sinha",
-    name: "Aarav Sinha",
-    subjects: "Lead General Science Tutor",
-    shortBio: "Hands-on STEM tutor focused on concept clarity and exam performance.",
-    fullBio:
-      "Ethan breaks down difficult science topics into clear, visual steps and keeps students accountable with short weekly challenge sets. His sessions emphasize problem-solving habits that transfer across subjects.",
-    image: "/tutors/ethan.svg",
-    badges: ["AP Physics", "AP Chemistry"]
   },
   {
     id: "jack-cheng",
