@@ -13,7 +13,7 @@ export const tutors: Tutor[] = [
     id: "aarav-sinha",
     name: "Aarav Sinha",
     subjects: "Lead General Science Tutor",
-    shortBio: "Hands-on STEM tutor focused on concept clarity and exam performance.",
+    shortBio: "Hands-on science tutor focused on concept clarity and exam performance.",
     fullBio:
       "Aarav is a sophomore at Tompkins High School who one day aspires to be a computational neuroscientist doing groundbreaking research in academia. He has a strong background in science competitions from TMSCA Science in middle school, where he's won over 50 medals in 3 year, all the way through Science Olympiad in high school, where he's competed as part of the Tompkins SciOly A Team and placed top 10 at MIT, top 5 at state, and won regional competitions. Outside of science competitions, Aarav conducts computational neuoscience research and has published papers in the field.",
     image: "/tutors/aarav.png",
