@@ -4,10 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
-import { registrationFormUrl } from "@/data/site";
 
 const links = [
   { href: "/", label: "Home" },
@@ -32,28 +30,23 @@ export function Navbar() {
             </div>
           </Link>
 
-          <div className="hidden items-center gap-3 md:flex">
-            <nav aria-label="Primary" className="flex items-center gap-2">
-              {links.map((link) => {
-                const active = pathname === link.href;
-                return (
-                  <Link
-                    className={cn(
-                      "focus-ring rounded-lg px-3 py-2 text-sm font-medium transition",
-                      active ? "bg-brand-blue/20 text-white" : "text-brand-muted hover:bg-white/5 hover:text-white"
-                    )}
-                    href={link.href}
-                    key={link.href}
-                  >
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </nav>
-            <Button href={registrationFormUrl} rel="noopener noreferrer" size="sm" target="_blank" variant="primary">
-              Register
-            </Button>
-          </div>
+          <nav aria-label="Primary" className="hidden items-center gap-2 md:flex">
+            {links.map((link) => {
+              const active = pathname === link.href;
+              return (
+                <Link
+                  className={cn(
+                    "focus-ring rounded-lg px-3 py-2 text-sm font-medium transition",
+                    active ? "bg-brand-blue/20 text-white" : "text-brand-muted hover:bg-white/5 hover:text-white"
+                  )}
+                  href={link.href}
+                  key={link.href}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
 
           <button
             aria-controls="mobile-menu"
@@ -110,14 +103,6 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <a
-              className="focus-ring mt-2 block rounded-lg bg-brand-blue px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-blueDark"
-              href={registrationFormUrl}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Register
-            </a>
           </nav>
         </div>
       </Container>

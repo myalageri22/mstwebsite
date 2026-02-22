@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { RegistrationSection } from "@/components/layout/RegistrationSection";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -138,8 +137,6 @@ export default function HomePage() {
           </ol>
         </Container>
       </section>
-
-      <RegistrationSection className="border-b border-white/10 bg-brand-ink/35" />
 
       <section className="border-y border-white/10 bg-brand-ink/45 py-20">
         <Container>

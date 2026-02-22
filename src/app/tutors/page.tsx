@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { RegistrationSection } from "@/components/layout/RegistrationSection";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -34,7 +33,6 @@ export default function TutorsPage() {
           </div>
         </Container>
       </section>
-      <RegistrationSection className="border-t border-white/10 bg-brand-ink/35" />
     </SiteLayout>
   );
 }
