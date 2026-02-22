@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Math and Science Tutors",
     description:
-      "High-impact tutoring for math and science built for serious students.",
+      "High-impact tutoring for Math and Science built for serious students.",
     url: "/"
   }
 };
@@ -31,7 +31,7 @@ const features = [
   {
     title: "Proven Strategies",
     description:
-      "We provide tricks and tips that can boost your score in math and science competitions"
+      "We provide tricks and tips that can boost your score in Math and Science competitions"
   }
 ];
 
@@ -53,7 +53,7 @@ const steps = [
 const faqs = [
   {
     question: "Who is this tutoring best for?",
-    answer: "Students in grades 4-8 who want to excel in math and science competitions like TMSCA."
+    answer: "Students in grades 4-8 who want to excel in Math and Science competitions like TMSCA."
   },
   {
     question: "Is tutoring in-person or online?",
@@ -83,7 +83,7 @@ export default function HomePage() {
               Math and Science Tutors
             </h1>
             <p className="mt-5 text-lg text-brand-muted sm:text-xl">
-              High-impact tutoring for math and science—built for serious students.
+              High-impact tutoring for Math and Science—built for serious students.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href="/program" variant="primary">
@@ -102,7 +102,7 @@ export default function HomePage() {
           <SectionHeading
             description="Mainly for TMSCA for General Science and Math"
             eyebrow="What We Offer:"
-            title="Tutoring for math and science competitions"
+            title="Tutoring for Math and Science competitions"
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item) => (

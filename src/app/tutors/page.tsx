@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Meet the Math and Science Tutors team and explore each tutor's subject strengths and teaching style.",
   openGraph: {
     title: "Tutors | Math and Science Tutors",
-    description: "Meet our tutors and find the best fit for your math and science goals.",
+    description: "Meet our tutors and find the best fit for your Math and Science goals.",
     url: "/tutors"
   }
 };

@@ -8,11 +8,11 @@ export const metadata: Metadata = {
     template: "%s | Math and Science Tutors"
   },
   description:
-    "High-impact tutoring for math and science, built for serious students. Personalized instruction, strategic practice, and measurable progress.",
+    "High-impact tutoring for Math and Science, built for serious students. Personalized instruction, strategic practice, and measurable progress.",
   openGraph: {
     title: "Math and Science Tutors",
     description:
-      "High-impact tutoring for math and science, built for serious students.",
+      "High-impact tutoring for Math and Science, built for serious students.",
     url: "https://www.mathsciencetutors.example",
     siteName: "Math and Science Tutors",
     type: "website"
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Math and Science Tutors",
     description:
-      "High-impact tutoring for math and science, built for serious students."
+      "High-impact tutoring for Math and Science, built for serious students."
   }
 };
 

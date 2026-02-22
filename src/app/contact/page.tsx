@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Math and Science Tutors to get started with personalized math and science tutoring.",
+    "Contact Math and Science Tutors to get started with personalized Math and Science tutoring.",
   openGraph: {
     title: "Contact | Math and Science Tutors",
     description: "Reach out to enroll in tutoring or ask questions about the 6-week program.",
