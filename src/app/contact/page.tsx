@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ContactForm } from "@/components/contact/ContactForm";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -22,21 +21,19 @@ export default function ContactPage() {
       <section className="py-16 sm:py-20">
         <Container>
           <SectionHeading
-            description="Tell us your goals and we will recommend the best next step for your student."
+            description="For all questions and enrollment details, email us directly."
             eyebrow="Contact"
-            title="Start the conversation"
+            title="Email us directly"
           />
-          <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr,0.8fr]">
-            <Card>
-              <ContactForm />
-            </Card>
-            <Card>
-              <h2 className="text-xl font-semibold">Business Contact Info</h2>
-              <ul className="mt-4 space-y-3 text-sm text-brand-muted">
-                <li>
-                  <span className="font-medium text-brand-text">Email:</span> msttutorsofficial@gmail.com
-                </li>
-              </ul>
+          <div className="mt-10 max-w-4xl">
+            <Card className="py-12 text-center sm:py-16">
+              <p className="text-sm uppercase tracking-[0.16em] text-brand-lime">Official Contact Email</p>
+              <a
+                className="focus-ring mt-4 inline-block rounded-xl px-2 font-serif text-3xl font-bold text-brand-text transition hover:text-brand-lime sm:text-5xl"
+                href="mailto:msttutorsofficial@gmail.com"
+              >
+                msttutorsofficial@gmail.com
+              </a>
             </Card>
           </div>
         </Container>
