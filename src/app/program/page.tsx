@@ -17,6 +17,19 @@ export const metadata: Metadata = {
   }
 };
 
+const offeredPrograms = [
+  {
+    title: "General Science",
+    description:
+      "Taught by Mrinal and Aarav"
+  },
+  {
+    title: "General Math",
+    description:
+      "Taught by Jack and Eric"
+  }
+];
+
 const whyChooseUs = [
   {
     title: "Competition-Focused Coaching",
@@ -40,18 +53,7 @@ const whyChooseUs = [
   }
 ];
 
-const offeredPrograms = [
-  {
-    title: "General Science",
-    description:
-      "Focused support in core science concepts, competition-style questions, and test-taking strategy."
-  },
-  {
-    title: "General Math",
-    description:
-      "Targeted coaching in foundational and advanced math topics with speed and accuracy practice."
-  }
-];
+
 
 export default function ProgramPage() {
   return (
