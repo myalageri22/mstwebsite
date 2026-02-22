@@ -10,6 +10,8 @@ type ButtonProps = {
   className?: string;
   disabled?: boolean;
   onClick?: () => void;
+  target?: string;
+  rel?: string;
 };
 
 const baseStyles =
@@ -37,11 +39,28 @@ export function Button({
   size = "md",
   className,
   disabled,
-  onClick
+  onClick,
+  target,
+  rel
 }: ButtonProps) {
   const classes = cn(baseStyles, variantStyles[variant], sizeStyles[size], className);
 
   if (href) {
+    const isExternal = href.startsWith("http://") || href.startsWith("https://") || href.startsWith("mailto:");
+
+    if (isExternal) {
+      return (
+        <a
+          className={classes}
+          href={href}
+          rel={rel ?? (target === "_blank" ? "noopener noreferrer" : undefined)}
+          target={target}
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
       <Link className={classes} href={href}>
         {children}

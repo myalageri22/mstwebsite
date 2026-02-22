@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { RegistrationSection } from "@/components/layout/RegistrationSection";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { programData } from "@/data/program";
+import { registrationFormUrl } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Program",
@@ -72,8 +74,8 @@ export default function ProgramPage() {
                 <span className="pb-1 text-sm text-brand-muted">total for all 6 weeks</span>
               </div>
               <div className="mt-8">
-                <Button href="/contact" variant="primary">
-                  Contact to Enroll
+                <Button href={registrationFormUrl} rel="noopener noreferrer" target="_blank" variant="primary">
+                  Register Now
                 </Button>
               </div>
             </Card>
@@ -152,6 +154,8 @@ export default function ProgramPage() {
           </div>
         </Container>
       </section>
+
+      <RegistrationSection className="border-t border-white/10 bg-brand-ink/35" />
     </SiteLayout>
   );
 }

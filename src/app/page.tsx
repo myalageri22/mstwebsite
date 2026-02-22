@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { RegistrationSection } from "@/components/layout/RegistrationSection";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { registrationFormUrl } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -92,6 +94,9 @@ export default function HomePage() {
               <Button href="/tutors" variant="secondary">
                 Meet the Tutors
               </Button>
+              <Button href={registrationFormUrl} rel="noopener noreferrer" target="_blank" variant="ghost">
+                Register Now
+              </Button>
             </div>
           </div>
         </Container>
@@ -133,6 +138,8 @@ export default function HomePage() {
           </ol>
         </Container>
       </section>
+
+      <RegistrationSection className="border-b border-white/10 bg-brand-ink/35" />
 
       <section className="border-y border-white/10 bg-brand-ink/45 py-20">
         <Container>

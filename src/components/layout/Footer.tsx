@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { registrationFormUrl } from "@/data/site";
 
 const links = [
   { href: "/", label: "Home" },
@@ -35,6 +36,17 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-brand-lime">Contact</h3>
             <ul className="mt-4 space-y-2 text-sm text-brand-muted">
               <li>Email: msttutorsofficial@gmail.com</li>
+              <li>
+                Register:{" "}
+                <a
+                  className="focus-ring rounded underline-offset-2 transition hover:text-white hover:underline"
+                  href={registrationFormUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Google Form
+                </a>
+              </li>
             </ul>
           </div>
         </div>
