@@ -51,7 +51,7 @@ const offeredPrograms = [
   {
     title: "General Math",
     description:
-      "Taught by Jack and Eric"
+      "Taught by Jack, Mrinal, and Aarav"
   }
 ];
 
