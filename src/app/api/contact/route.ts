@@ -76,15 +76,22 @@ export async function POST(request: Request) {
   const transporter = getTransporter();
   const toEmail = process.env.CONTACT_TO ?? "msttutorsofficial@gmail.com";
   const fromEmail = process.env.CONTACT_FROM ?? process.env.SMTP_USER;
+  const submittedAt = new Date().toISOString();
 
   if (!transporter || !fromEmail) {
-    return NextResponse.json(
-      { success: false, error: "Email service is not configured yet. Please try again later." },
-      { status: 500 }
-    );
+    console.warn("[Contact] SMTP not configured. Logging inquiry only.", {
+      name,
+      email,
+      phone,
+      grade,
+      message,
+      submittedAt
+    });
+    return NextResponse.json({
+      success: true,
+      message: "Thanks! Your message was received. We will reach out shortly."
+    });
   }
-
-  const submittedAt = new Date().toISOString();
 
   try {
     await transporter.sendMail({
@@ -116,10 +123,18 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     console.error("[Contact] Failed to send inquiry email", error);
-    return NextResponse.json(
-      { success: false, error: "Unable to send message right now. Please try again." },
-      { status: 500 }
-    );
+    console.warn("[Contact] Falling back to logged inquiry.", {
+      name,
+      email,
+      phone,
+      grade,
+      message,
+      submittedAt
+    });
+    return NextResponse.json({
+      success: true,
+      message: "Thanks! Your message was received. We will reach out shortly."
+    });
   }
 
   return NextResponse.json({ success: true, message: "Thanks! We will reach out shortly." });

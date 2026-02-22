@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     question: "How much does the program cost?",
-    answer: "The 6-week program is $200 and includes 6 sessions total, TMSCA test packets, and specific advice to excel!."
+    answer: "The 6-week program is $150 and includes 6 sessions total, TMSCA test packets, and specific advice to excel!."
   },
   {
     question: "Do you offer one-on-one tutoring?",
