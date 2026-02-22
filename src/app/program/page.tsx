@@ -17,18 +17,7 @@ export const metadata: Metadata = {
   }
 };
 
-const offeredPrograms = [
-  {
-    title: "General Science",
-    description:
-      "Taught by Mrinal and Aarav"
-  },
-  {
-    title: "General Math",
-    description:
-      "Taught by Jack and Eric"
-  }
-];
+
 
 const whyChooseUs = [
   {
@@ -50,6 +39,19 @@ const whyChooseUs = [
     title: "Competitive Pricing",
     description:
       "Our prices are significantly cheaper than other programs by over 50%!"
+  }
+];
+
+const offeredPrograms = [
+  {
+    title: "General Science",
+    description:
+      "Taught by Mrinal and Aarav"
+  },
+  {
+    title: "General Math",
+    description:
+      "Taught by Jack and Eric"
   }
 ];
 
