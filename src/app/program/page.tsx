@@ -72,14 +72,19 @@ export default function ProgramPage() {
                 <span className="pb-1 text-sm text-brand-muted">total for all 6 weeks</span>
               </div>
               <div className="mt-8">
-                <Button href="/contact" variant="primary">
-                  Contact to Enroll
+                <Button
+                  href="https://forms.gle/aE7WXLbhCHMhbVCz6"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Enroll at this link
                 </Button>
               </div>
             </Card>
 
             <Card>
-              <h2 className="text-lg font-semibold text-brand-text">Schedule (Editable)</h2>
+              <h2 className="text-lg font-semibold text-brand-text">Schedule</h2>
               <ul className="mt-4 space-y-2 text-sm text-brand-muted">
                 <li>
                   <span className="font-medium text-brand-text">Days:</span> {programData.schedule.days}
