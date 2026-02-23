@@ -10,6 +10,17 @@ export type Tutor = {
 
 export const tutors: Tutor[] = [
   {
+    id: "mrinal-yalageri",
+    name: "Mrinal Yalageri",
+    subjects: "Lead General Science Tutor",
+    shortBio: "Biology student with a strong science competition background",
+    fullBio:
+      "Mrinal is a current 10th grader at Tompkins High School and has a strong background in Math and Science competitions, with multiple awards at the regional and state level. He is passionate about biology. Additionally, Mrinal has a very keen interest in Biomedical Engineering and hopes to become a physician-scientist someday and work in the field of radiology alongside biotechnology with also AI. He has many hobbies, such as playing tennis, cricket, and love mobile games and also love to do STEM competitions with of course a focus in Biology. He has also conducted research in using AI in Bioprinting and hopes to publish a paper soon.",
+    image: "/tutors/mrinal.png",
+    badges: ["2nd Place Science at State (2024)", "Multiple Regional Level Awards in Science", "1st Place Team at State (2024)", "One of the Highest Score (231) in General Science", "2x Science Olympiad Medal", "Vice-President of MST Club at CRJH", "1st Place, Clements Java Programming", "6th Place, Seven Lakes Java Programming", "6th Highest Biology Score in UIL Districts"] 
+  },
+  
+  {
       id: "aarav-sinha",
       name: "Aarav Sinha",
       subjects: "Lead General Science Tutor",
@@ -20,16 +31,7 @@ export const tutors: Tutor[] = [
       badges: ["1st Place TMSCA Science at State", "Placed Top 5 in Science in every TMSCA comp attended", "1st Place Team at State (2024)", "Former President of CRJH Math and Science Team", "Top 3 in 2 events at Texas State Science Olympiad", "Over 15 lifetime scioly medals, $500 prize money won)", "USACO Gold", "Tompkins HS Class of 2027-2028 Rank 5"]
   },
     
-  {
-    id: "mrinal-yalageri",
-    name: "Mrinal Yalageri",
-    subjects: "Lead General Science Tutor",
-    shortBio: "Biology student with a strong science competition background",
-    fullBio:
-      "Mrinal is a current 10th grader at Tompkins High School and has a strong background in Math and Science competitions, with multiple awards at the regional and state level. He is passionate about biology. Additionally, Mrinal has a very keen interest in Biomedical Engineering and hopes to become a physician-scientist someday and work in the field of radiology alongside biotechnology with also AI. He has many hobbies, such as playing tennis, cricket, and love mobile games and also love to do STEM competitions with of course a focus in Biology. He has also conducted research in using AI in Bioprinting and hopes to publish a paper soon.",
-    image: "/tutors/mrinal.png",
-    badges: ["2nd Place Science at State (2024)", "Multiple Regional Level Awards in Science", "1st Place Team at State (2024)", "One of the Highest Score (231) in General Science", "2x Science Olympiad Medal", "Vice-President of MST Club at CRJH", "1st Place, Clements Java Programming", "6th Place, Seven Lakes Java Programming", "6th Highest Biology Score in UIL Districts"] 
-  },
+  
   
   
   
