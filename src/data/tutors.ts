@@ -31,22 +31,22 @@ export const tutors: Tutor[] = [
   },
   
   {
-    id: "andrew-zhang",
-    name: "Andrew Zhang",
+    id: "jack-cheng",
+    name: "Jack Cheng",
     subjects: "Lead General Math Tutor",
     shortBio: "General tutor focused on helping students master dense content quickly.",
     fullBio:
-      "Andrew is the current sophomore Salutatorian at Tompkins High School and has a strong background in academic competitions and biotechnological research, with multiple awards in TMSCA, Science Olympiad, Scholastic Art and Writing, and AMC at various levels. On the side he is also proficent in Chinese, a professional table tennis player and art enthusiast.",
+      "Jack is the current sophomore Salutatorian at Tompkins High School and has a strong background in academic competitions and biotechnological research, with multiple awards in TMSCA, Science Olympiad, Scholastic Art and Writing, and AMC at various levels. On the side he is also proficent in Chinese, a professional table tennis player and art enthusiast.",
     image: "/tutors/Andrew.jpeg",
     badges: ["3x Science Olympiad Invitational Medals", "Tompkins HS Class of 2027-2028 Current Salutatorian", "2021 AMC8 Achievement & Honor Roll", "2x TMSCA General Math State Medals", "TMSCA General Science State Medal", "4th Place Math Team at State (2024)", "Scholastic Critical Essay Silver Key on Biotechnology", "Years of Tutoring Experience"]
   },
   {
-    id: "jack-cheng",
-    name: "Jack Cheng",
+    id: "andrew-zhang",
+    name: "Andrew Zhang",
     subjects: "Lead General Math Tutor",
     shortBio: "Competitive math tutor with a focus on problem-solving strategies.",
     fullBio:
-      "Jack is a current 9th grader at Tompkins High School and has a background in math competitions. He has many awards in TMSCA and AMCs. He is also fluent in Chinese and plays the cello.",
+      "Andrew is a current 9th grader at Tompkins High School and has a background in math competitions. He has many awards in TMSCA and AMCs. He is also fluent in Chinese and plays the cello.",
     image: "/tutors/IMG_3937.jpeg",
     badges: ["AMC8 Score of 23: Honor Roll AND Distinguished Honor Roll", "9th and 13th at TMSCA State for General Math", "2021 AMC8 Achievement & Honor Roll", "4th place math team at State (2024)"]
   }
