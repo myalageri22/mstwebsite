@@ -10,6 +10,16 @@ export type Tutor = {
 
 export const tutors: Tutor[] = [
   {
+      id: "aarav-sinha",
+      name: "Aarav Sinha",
+      subjects: "Lead General Science Tutor",
+      shortBio: "Hands-on science tutor focused on concept clarity and exam performance.",
+      fullBio:
+        "Aarav is a sophomore at Tompkins High School who one day aspires to be a computational neuroscientist doing groundbreaking research in academia. He has a strong background in science competitions from TMSCA Science in middle school, where he's won over 50 medals in 3 years, all the way through Science Olympiad in high school, where he's competed as part of the Tompkins SciOly A Team and placed top 10 at MIT, top 5 at state, and won regional competitions. Outside of science competitions, Aarav conducts computational neuroscience research with researchers from Harvard and JHU and has published numerous papers in the field.",
+      image: "/tutors/aarav.png",
+      badges: ["1st Place TMSCA Science at State", "Placed Top 5 in Science in every TMSCA comp attended", "1st Place Team at State (2024)", "President of CRJH Math and Science Team (2024)", "Top 5 in 3 events at Texas State Science Olympiad", "Over 15 lifetime scioly medals, $500 prize money won)", "USACO Gold", "Tompkins HS Class of 2027-2028 Rank 5"]
+  },
+  {
     id: "mrinal-yalageri",
     name: "Mrinal Yalageri",
     subjects: "Lead General Science Tutor",
@@ -20,16 +30,7 @@ export const tutors: Tutor[] = [
     badges: ["2nd Place Science at State (2024)", "Multiple Regional Level Awards in Science", "1st Place Team at State (2024)", "One of the Highest Score (231) in General Science", "2x Science Olympiad Medal", "Vice-President of MST Club at CRJH", "1st Place, Clements Java Programming", "6th Place, Seven Lakes Java Programming", "6th Highest Biology Score in UIL Districts"] 
   },
   
-  {
-      id: "aarav-sinha",
-      name: "Aarav Sinha",
-      subjects: "Lead General Science Tutor",
-      shortBio: "Hands-on science tutor focused on concept clarity and exam performance.",
-      fullBio:
-        "Aarav is a sophomore at Tompkins High School who one day aspires to be a computational neuroscientist doing groundbreaking research in academia. He has a strong background in science competitions from TMSCA Science in middle school, where he's won over 50 medals in 3 years, all the way through Science Olympiad in high school, where he's competed as part of the Tompkins SciOly A Team and placed top 10 at MIT, top 5 at state, and won regional competitions. Outside of science competitions, Aarav conducts computational neuroscience research with researchers from Harvard and JHU and has published numerous papers in the field.",
-      image: "/tutors/aarav.png",
-      badges: ["1st Place TMSCA Science at State", "Placed Top 5 in Science in every TMSCA comp attended", "1st Place Team at State (2024)", "President of CRJH Math and Science Team (2024)", "Top 5 in 3 events at Texas State Science Olympiad", "Over 15 lifetime scioly medals, $500 prize money won)", "USACO Gold", "Tompkins HS Class of 2027-2028 Rank 5"]
-  },
+  
   
   
   
